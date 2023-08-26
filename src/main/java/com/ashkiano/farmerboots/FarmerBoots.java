@@ -13,8 +13,9 @@ public class FarmerBoots extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        // Register this Listener when the plugin starts
         this.getServer().getPluginManager().registerEvents(this, this);
+
+        Metrics metrics = new Metrics(this, 19541);
     }
 
     @EventHandler
