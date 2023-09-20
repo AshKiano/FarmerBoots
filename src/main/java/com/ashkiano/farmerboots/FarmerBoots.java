@@ -16,6 +16,8 @@ public class FarmerBoots extends JavaPlugin implements Listener {
         this.getServer().getPluginManager().registerEvents(this, this);
 
         Metrics metrics = new Metrics(this, 19541);
+
+        this.getLogger().info("Thank you for using the FarmerBoots plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
     }
 
     @EventHandler
